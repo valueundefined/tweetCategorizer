@@ -1,1 +1,1 @@
-This folder contains relevant data for our research.
+Relevant data stored on Google Drive.
