@@ -7,7 +7,6 @@ import nltk
 #import getopt
 
 #Usage: interface.py [corpus file]
-#helper file has ID and text
 if __name__=='__main__':
     nltk.download('stopwords')
     sectionBreak = "****************************************************************"
@@ -43,30 +42,10 @@ if __name__=='__main__':
         print(t)
     print("Trigram analysis done.")
 
-    print(sectionBreak)
-    print("Generating word cloud.")
-    analysis.makeCloud('ngrams',100)
-    print("Word cloud done.")
+    #Word cloud functionality is broken in current version of TextQ 
+    #print(sectionBreak)
+    #print("Generating word cloud.")
+    #analysis.makeCloud('ngrams',100)
+    #print("Word cloud done.")
 
     #analysis.exportData("out.csv")
-
-
-
-######################NOTES#######################
-    #2 required inputs: parameter file (helper file), input file
-        #helpfer file: ID (unique ID), Text - (column that contains text to be analysed), [Keyword Filters, Options]*optional
-    #1 optional file: additional stopword file (does english stopword file by default - will need web one to eliminate twitter data)
-
-    #keyword filtering options (optional)
-
-    #parse from csv
-
-    #begin analysis, display output - give option to export results to csv (print terms, term frew, doc frew, IDF)
-    #next analysis: bigram freq (bigram, count) - give option to export to csv
-    #next analysis: trigram (trigram, count) - give option to export to csv
-    #next anlaysis: wordcloud
-
-
-    #export filtered data
-
-    #return to upload
