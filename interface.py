@@ -6,7 +6,8 @@ import nltk
 #import argparse
 #import getopt
 
-#Usage: interface.py [corpus file]
+#Usage: interface.py [data file]
+#Data file must have two columns, labelled "id" and "data"
 if __name__=='__main__':
     nltk.download('stopwords')
     sectionBreak = "****************************************************************"
